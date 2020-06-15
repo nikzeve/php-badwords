@@ -8,6 +8,8 @@
 
     $testo = str_replace($parola_da_censurare, $censura, $testo);
 
+    $lunghezza_testo = strlen($testo);
+
 ?>
 
 
@@ -19,7 +21,9 @@
  </head>
  <body>
      <div id="container">
-         <p> <?php  echo $testo; echo $parola_da_censurare; echo $censura; ?> </p>
+         <p><span>Ecco il testo:</span> <?php echo $testo; ?> </p>
+         <p><span>Ecco la parola censurata:</span> <?php echo $parola_da_censurare; ?></p>
+         <p><span>Ecco la lunghezza del paragrafo:</span> <?php echo $lunghezza_testo; ?></p>
      </div>
  </body>
 </html>
